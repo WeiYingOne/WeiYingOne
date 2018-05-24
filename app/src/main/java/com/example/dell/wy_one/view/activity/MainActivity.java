@@ -19,6 +19,9 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import butterknife.BindView;
 import butterknife.OnClick;
 
+/**
+ * MainActivity
+ */
 public class MainActivity extends BaseActivity {
 
     @BindView(R.id.jingxuan)
@@ -93,7 +96,7 @@ public class MainActivity extends BaseActivity {
                 fragmentManager.beginTransaction().hide(findFragment).hide(choicenessFragment).hide(specialFragment).show(myFragment).commit();
                 break;
 
-                
+
             case R.id.relative_shoucang:
                 //collect收藏
                 Intent intent = new Intent(MainActivity.this
