@@ -93,7 +93,7 @@ public class MainActivity extends BaseActivity {
                 fragmentManager.beginTransaction().hide(findFragment).hide(choicenessFragment).hide(specialFragment).show(myFragment).commit();
                 break;
 
-                //w
+                
             case R.id.relative_shoucang:
                 //collect收藏
                 Intent intent = new Intent(MainActivity.this
