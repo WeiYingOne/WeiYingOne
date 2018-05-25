@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_search">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="135pt"
+        android:gravity="center"
+        android:background="#0581d7">
+        <ImageView
+            android:id="@+id/back_welfare"
+            android:layout_width="wrap_content"
+            android:layout_height="32pt"
+            android:padding="13pt"
+            android:layout_marginTop="60pt"
+            android:layout_marginLeft="26pt"
+            android:background="@mipmap/back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="53pt"
+            android:textSize="32pt"
+            android:text="福利"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/welfare_refresh"
+        android:layout_marginTop="135pt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.dell.wy_one.view.custom.ObservableScrollView
+            android:id="@+id/scrollView_welfare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_welfare"
+                android:layout_marginTop="12pt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+        </com.example.dell.wy_one.view.custom.ObservableScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

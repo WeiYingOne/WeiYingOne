@@ -109,6 +109,8 @@ public class MainActivity extends BaseActivity {
                 //福利
             case R.id.relative_fuli:
 
+                startActivity(new Intent(MainActivity.this
+                        , WelfareActivity.class));
                 break;
             case R.id.relative_fenxiang:
                 //share分享
